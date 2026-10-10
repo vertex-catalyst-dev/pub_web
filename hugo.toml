@@ -1,0 +1,6 @@
+baseURL = "http://localhost:1313/"
+languageCode = "es"
+title = "pub_web"
+
+[params]
+  description = "Sitio estático con Hugo y Alpine.js para practicar componentes"

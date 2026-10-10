@@ -1,0 +1,5 @@
+<div class="counter" x-data="{ count: {{ .start | default 0 }} }">
+  <button @click="count--">-</button>
+  <span x-text="count"></span>
+  <button @click="count++">+</button>
+</div>

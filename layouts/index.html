@@ -1,0 +1,8 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ partial "components/counter.html" (dict "start" 0) }}
+{{ partial "components/accordion.html" (dict "title" "¿Qué es un componente?" "body" "Un parcial de Hugo con estado Alpine.js.") }}
+<h2>Posts</h2>
+<ul>{{ range where site.RegularPages "Section" "posts" }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+{{ end }}

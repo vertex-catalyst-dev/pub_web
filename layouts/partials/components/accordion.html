@@ -1,0 +1,4 @@
+<section class="accordion" x-data="{ open: false }">
+  <button @click="open = !open">{{ .title }}</button>
+  <p x-show="open" x-cloak>{{ .body }}</p>
+</section>
