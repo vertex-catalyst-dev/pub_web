@@ -1,0 +1,8 @@
+<header x-data="{ open: false }">
+  <a href="{{ "/" | relURL }}">{{ site.Title }}</a>
+  <button @click="open = !open" :aria-expanded="open">Menú</button>
+  <nav x-show="open" x-cloak>
+    <a href="{{ "/" | relURL }}">Inicio</a>
+    <a href="{{ "posts/" | relURL }}">Posts</a>
+  </nav>
+</header>
